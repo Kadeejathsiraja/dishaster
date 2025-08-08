@@ -1,0 +1,519 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #f7fafc;
+    font-weight: 500;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Generation Section */
+.generation-section {
+    text-align: center;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 20px 40px;
+    border-radius: 16px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+.generate-btn:active {
+    transform: translateY(0);
+}
+
+/* Result Section */
+.result-section {
+    width: 100%;
+    max-width: 600px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.dish-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.dish-combo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 12px;
+}
+
+.roast-text {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-style: italic;
+    color: #2d3748;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.action-btn:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+}
+
+.share-btn {
+    background: #10b981;
+}
+
+.share-btn:hover {
+    background: #059669;
+}
+
+.recipe-btn {
+    background: #f59e0b;
+}
+
+.recipe-btn:hover {
+    background: #d97706;
+}
+
+/* Taste Meter */
+.taste-meter {
+    border-top: 2px solid #e2e8f0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.taste-meter h4 {
+    margin-bottom: 16px;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+.taste-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.taste-btn {
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.taste-btn:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+}
+
+.taste-btn.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+/* Submission Section */
+.submission-section,
+.leaderboard-section {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.submission-section h3,
+.leaderboard-section h3 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.submit-form input {
+    padding: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.submit-form input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.submit-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+}
+
+/* Leaderboard */
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.leaderboard-item {
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.leaderboard-item:hover {
+    background: #edf2f7;
+    transform: translateY(-1px);
+}
+
+.leaderboard-content {
+    flex: 1;
+}
+
+.leaderboard-combo {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 4px;
+}
+
+.leaderboard-author {
+    font-size: 0.85rem;
+    color: #718096;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    color: #e53e3e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.like-btn:hover {
+    background: #fed7d7;
+    transform: scale(1.1);
+}
+
+.like-btn.liked {
+    color: #e53e3e;
+    background: #fed7d7;
+}
+
+.like-count {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 32px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #a0aec0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #2d3748;
+}
+
+.recipe-response {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4a5568;
+    font-style: italic;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+/* Share Menu Styles */
+.share-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.share-options {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.share-options h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2d3748;
+}
+
+.share-option {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.whatsapp { background: #25d366; }
+.facebook { background: #1877f2; }
+.twitter { background: #1da1f2; }
+.copy-btn { background: #667eea; }
+
+.share-option:hover { 
+    transform: translateY(-2px); 
+    opacity: 0.9; 
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .dish-card {
+        padding: 24px;
+    }
+    
+    .dish-combo {
+        font-size: 1.4rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .taste-options {
+        gap: 4px;
+    }
+    
+    .taste-btn {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+    
+    .leaderboard-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .like-section {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .generate-btn {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+    
+    .submission-section,
+    .leaderboard-section {
+        padding: 24px;
+    }
+}
