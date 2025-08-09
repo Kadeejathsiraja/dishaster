@@ -1,97 +1,69 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# Dishaster 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Wowtech
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Kadeejath Siraja C A - LBS College of Engineering, Kasaragod
+- Member 2: Fathima Shama - LBS College of Engineering, Kasaragod
+
 
 ### Project Description
-[2-3 lines about what your project does]
+Dishaster is a gloriously useless web app that generates absurd food combinations, roasts you in Manglish for even thinking about them, and lets you rate these culinary crimes. You can even add your own cursed creations to a public leaderboard… if you dare.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People are out here eating normal, boring meals every day. Where’s the chaos? Where’s the thrill? There’s a severe lack of a platform dedicated to bringing together truly ridiculous, flavor-questionable food pairings.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Dishaster solves this non-existent crisis by combining completely unrelated ingredients into one horrifying suggestion. It even has a “Share” button… which does absolutely nothing. Just like your diet plan.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
+-Languages: HTML, CSS, JavaScript
+-Frameworks: None (pure uselessness)
+-Libraries: Bolt.js
+-Tools: Bolt AI
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
+-None (unless you count your taste buds as hardware)
 ### Implementation
 For Software:
 # Installation
-[commands]
+1.Download or clone this repository.
+2.Extract the zip file (if downloaded).
+3.Open index.html in your browser.
 
 # Run
-[commands]
+No setup needed — just open and suffer.
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](<img width="1902" height="1042" alt="image" src="https://github.com/user-attachments/assets/c271012f-6edb-4bfe-ad2d-f9c7510e2a66" />
-)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 073951" src="https://github.com/user-attachments/assets/68393590-7f9c-4461-a195-9381566db22c" />
+home page
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 074005" src="https://github.com/user-attachments/assets/347cfe38-45b0-48f8-9d7e-e21aa34b6d6a" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+A cursed combo suggestion, complete with Manglish roast
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 074246" src="https://github.com/user-attachments/assets/42fd88bb-b70b-43b6-9e25-fb3039fd37b6" />
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
-For Hardware:
+A pointless diagram explaining an even more pointless process
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Kadeejath Siraja C A: Concept, development, Manglish roasts
+- Fathima Shama: UI design, cursed combo generation ideas
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
